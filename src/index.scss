@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./fonts/Roboto-Regular.ttf") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./fonts/Roboto-Medium.ttf") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("./fonts/Roboto-Thin.ttf") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Playlist";
+  src: url("./fonts/Playlist-Script.otf") format("woff");
+  font-weight: normal;
+}
+
+.btn-red {
+  width: 174px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  background-color: #e40a0a;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Roboto-Regular";
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
