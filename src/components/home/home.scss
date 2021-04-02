@@ -158,7 +158,7 @@
     }
 
     &:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -183,6 +183,7 @@
   .img-wrap {
     height: 200px;
     width: 100%;
+    margin-bottom: -2px;
 
     img {
       width: 100%;

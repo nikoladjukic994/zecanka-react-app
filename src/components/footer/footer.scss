@@ -1,0 +1,39 @@
+.footer {
+  padding: 2rem 1rem 1rem;
+  background: url("../../images/footer/footer-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .footer-block {
+    padding: 1rem 0;
+
+    h3 {
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Roboto-Regular";
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Roboto-Thin";
+    }
+
+    .social-networks {
+      margin-bottom: 3rem;
+
+      a {
+        margin: 1rem;
+
+        svg {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
