@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./footer.scss";
-import certificate1 from "../../images/footer/certificate-1.svg";
-import certificate2 from "../../images/footer/certificate-2.svg";
 
 import {
   FaFacebookF,
@@ -12,10 +10,45 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
+  const social_networks = [
+    {
+      link: "https://www.facebook.com/",
+      name: "Facebook",
+      icon: <FaFacebookF></FaFacebookF>,
+    },
+    {
+      link: "https://www.twitter.com/",
+      name: "Twitter",
+      icon: <FaTwitter></FaTwitter>,
+    },
+    {
+      link: "https://www.youtube.com/",
+      name: "Youtube",
+      icon: <FaYoutube></FaYoutube>,
+    },
+    {
+      link: "https://www.instagram.com/",
+      name: "Instagram",
+      icon: <FaInstagram></FaInstagram>,
+    },
+    {
+      link: "https://www.google.com/",
+      name: "Google",
+      icon: <FaGooglePlusG></FaGooglePlusG>,
+    },
+  ];
   return (
     <div className="footer">
-      <div className="footer-block">
-        <img src={certificate1} alt="Certificate" />
+      <div
+        className="footer-block"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <img
+          src={process.env.PUBLIC_URL + "images/footer/certificate-1.svg"}
+          alt="Certificate"
+        />
         <div>
           <h3>Excellent sertifikat</h3>
           <p>
@@ -24,8 +57,16 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="footer-block">
-        <img src={certificate2} alt="Certificate" />
+      <div
+        className="footer-block"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <img
+          src={process.env.PUBLIC_URL + "images/footer/certificate-2.svg"}
+          alt="Certificate"
+        />
         <div>
           <h3>Već 23 godine sa vama</h3>
           <p>
@@ -34,26 +75,26 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="footer-block">
+      <div
+        className="footer-block"
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <div>
           <div className="social-networks">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-              <FaFacebookF></FaFacebookF>
-            </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener">
-              <FaTwitter></FaTwitter>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
-              <FaYoutube></FaYoutube>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-              <FaInstagram></FaInstagram>
-            </a>
-            <a href="https://www.google.com/" target="_blank" rel="noopener">
-              <FaGooglePlusG></FaGooglePlusG>
-            </a>
+            {social_networks.map((item, idx) => (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener"
+                aria-label={item.name}
+              >
+                {item.icon}
+              </a>
+            ))}
           </div>
-          <p>© 2021 Zećanka All rights reserved.</p>
+          <p>© 2021 Zećanka Sva prava zadržana.</p>
         </div>
       </div>
     </div>

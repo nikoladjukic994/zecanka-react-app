@@ -1,6 +1,6 @@
 .footer {
   padding: 2rem 1rem 1rem;
-  background: url("../../images/footer/footer-background.png");
+  background: url("http://localhost:3000/images/footer/footer-background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     h3 {
       font-size: 16px;
       line-height: 24px;
-      color: #ffffff;
+      color: #fff;
       font-weight: 400;
       font-family: "Roboto-Regular";
     }
@@ -19,7 +19,7 @@
     p {
       font-size: 16px;
       line-height: 24px;
-      color: #ffffff;
+      color: #fff;
       font-weight: 400;
       font-family: "Roboto-Thin";
     }
@@ -32,7 +32,53 @@
 
         svg {
           color: #fff;
+          transition: all 0.3s;
         }
+
+        &:hover {
+          svg {
+            color: #e40a0a;
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+    background: url("http://localhost:3000/images/footer/footer-background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    .footer-block {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      text-align: left;
+
+      h3 {
+        max-width: 300px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        max-width: 300px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      .social-networks {
+        margin-bottom: 3rem;
+        margin-left: 1rem;
       }
     }
   }

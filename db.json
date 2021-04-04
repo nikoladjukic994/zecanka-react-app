@@ -1,0 +1,299 @@
+{
+  "all_products": [
+    {
+      "id": 1,
+      "title": "Pariska noć",
+      "image": "images/products/product-1.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 2,
+      "title": "Amika",
+      "image": "images/products/product-2.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 3,
+      "title": "Afrodita",
+      "image": "images/products/product-3.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 4,
+      "title": "Montana",
+      "image": "images/products/product-4.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 5,
+      "title": "Pariska noć",
+      "image": "images/products/product-5.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 6,
+      "title": "Amika",
+      "image": "images/products/product-6.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 7,
+      "title": "Afrodita",
+      "image": "images/products/product-7.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 8,
+      "title": "Montana",
+      "image": "images/products/product-8.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 9,
+      "title": "Pariska noć",
+      "image": "images/products/product-1.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 10,
+      "title": "Amika",
+      "image": "images/products/product-2.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 11,
+      "title": "Afrodita",
+      "image": "images/products/product-3.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 12,
+      "title": "Montana",
+      "image": "images/products/product-4.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 13,
+      "title": "Pariska noć",
+      "image": "images/products/product-5.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 14,
+      "title": "Amika",
+      "image": "images/products/product-6.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 15,
+      "title": "Afrodita",
+      "image": "images/products/product-7.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 16,
+      "title": "Montana",
+      "image": "images/products/product-8.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 17,
+      "title": "Pariska noć",
+      "image": "images/products/product-1.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 18,
+      "title": "Amika",
+      "image": "images/products/product-2.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 19,
+      "title": "Afrodita",
+      "image": "images/products/product-3.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 20,
+      "title": "Montana",
+      "image": "images/products/product-4.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 21,
+      "title": "Pariska noć",
+      "image": "images/products/product-5.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 22,
+      "title": "Amika",
+      "image": "images/products/product-6.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 23,
+      "title": "Afrodita",
+      "image": "images/products/product-7.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 24,
+      "title": "Montana",
+      "image": "images/products/product-8.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 25,
+      "title": "Pariska noć",
+      "image": "images/products/product-1.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 26,
+      "title": "Amika",
+      "image": "images/products/product-2.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 27,
+      "title": "Afrodita",
+      "image": "images/products/product-3.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 28,
+      "title": "Montana",
+      "image": "images/products/product-4.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 29,
+      "title": "Pariska noć",
+      "image": "images/products/product-5.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 30,
+      "title": "Amika",
+      "image": "images/products/product-6.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 31,
+      "title": "Afrodita",
+      "image": "images/products/product-7.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 32,
+      "title": "Montana",
+      "image": "images/products/product-8.png",
+      "price": "12.658,45"
+    }
+  ],
+  "top_products": [
+    {
+      "id": 1,
+      "title": "Pariska noć",
+      "image": "images/products/product-1.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 2,
+      "title": "Amika",
+      "image": "images/products/product-2.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 3,
+      "title": "Afrodita",
+      "image": "images/products/product-3.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 4,
+      "title": "Montana",
+      "image": "images/products/product-4.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 5,
+      "title": "Pariska noć",
+      "image": "images/products/product-5.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 6,
+      "title": "Amika",
+      "image": "images/products/product-6.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 7,
+      "title": "Afrodita",
+      "image": "images/products/product-7.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 8,
+      "title": "Montana",
+      "image": "images/products/product-8.png",
+      "price": "12.658,45"
+    }
+  ],
+  "catalogs": [{ "id": 1, "document": "documents/sample.pdf" }],
+  "services": [
+    {
+      "id": 1,
+      "title": "Isporuka",
+      "description": "Brza isporuka i montaža na teritoriji Crne Gore",
+      "image": "images/services/service-1.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 2,
+      "title": "Visoki kvalitet",
+      "description": "Namještaj renomiranih proizvodjača iz Italije, Njemačke i Poljske",
+      "image": "images/services/service-2.png",
+      "price": "12.658,45"
+    },
+    {
+      "id": 3,
+      "title": "Nagrade",
+      "description": "Dobitnici prestižnih sertifikata za kvalitet i uspješno poslovanje",
+      "image": "images/services/service-3.png",
+      "price": "102.973,20"
+    },
+    {
+      "id": 4,
+      "title": "Sigurnost",
+      "description": "Već 23 godine gradimo povjerenje i omogućavamo sigurnu kupovinu",
+      "image": "images/services/service-4.png",
+      "price": "12.658,45"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "image": "images/gallery/gallery-1.png"
+    },
+    {
+      "id": 2,
+      "image": "images/gallery/gallery-2.png"
+    },
+    {
+      "id": 3,
+      "image": "images/gallery/gallery-3.png"
+    },
+    {
+      "id": 4,
+      "image": "images/gallery/gallery-4.png"
+    },
+    {
+      "id": 5,
+      "image": "images/gallery/gallery-5.png"
+    }
+  ]
+}
