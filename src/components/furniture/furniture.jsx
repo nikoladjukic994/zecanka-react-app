@@ -4,6 +4,8 @@ import axios from "axios";
 
 import { FaTable, FaList } from "react-icons/fa";
 
+import { NavLink } from "react-router-dom";
+
 function Furniture() {
   const [allProducts, setAllProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -59,8 +61,10 @@ function Furniture() {
             className={gridList == "grid" ? "products-row" : "products-list"}
           >
             {filteredProducts.map((product) => (
-              <a
-                href="#"
+              <NavLink
+                to={{
+                  pathname: `/furniture-single-${product.id}`
+                }}
                 className="product"
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -76,7 +80,7 @@ function Furniture() {
                   <h3>{product.title}</h3>
                   <span className="price">&euro;{product.price}</span>
                 </div>
-              </a>
+              </NavLink>
             ))}
           </div>
         ) : (

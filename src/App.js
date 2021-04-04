@@ -10,6 +10,7 @@ import CatalogsAndFlyers from "./components/catalogs-and-flyers/catalogs-and-fly
 import Contact from "./components/contact/contact";
 import Employment from "./components/employment/employment";
 import Furniture from "./components/furniture/furniture";
+import FurnitureSingle from "./components/furniture/furniture-single";
 import NotFound from "./components/not-found/not-found";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/furniture">
             <Furniture />
+          </Route>
+          <Route path="/furniture-single-:id">
+            <FurnitureSingle />
           </Route>
           <Route path="/about-us">
             <AboutUs />
