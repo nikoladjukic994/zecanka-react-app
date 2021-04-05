@@ -1,0 +1,60 @@
+.heading-small {
+  margin-top: 68px;
+  padding: 2rem 1rem;
+
+  h2 {
+    font-size: 28px;
+    letter-spacing: -1px;
+    color: #bababa;
+    font-weight: 700;
+    font-family: "Roboto-Regular";
+    text-align: center;
+    margin: 1rem auto 0;
+
+    span {
+      color: #e40a0a;
+    }
+  }
+}
+
+.about-text {
+  padding: 0 1rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+
+  p {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .heading-small {
+    margin-top: 0;
+    padding: 2rem 1rem;
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  .about-text {
+    padding: 0 2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+}
