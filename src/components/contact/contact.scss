@@ -1,0 +1,135 @@
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 450px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 450px;
+  width: 100%;
+}
+
+.contact-wrap {
+  .contact-info {
+    .contact-link {
+      display: block;
+      font-family: "RobotoRegular";
+      font-size: 16px;
+      color: #000;
+      margin: 0 0 1rem;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #e40a0a;
+      }
+    }
+
+    .social-networks {
+      margin-bottom: 3rem;
+
+      a {
+        margin: 1rem;
+
+        svg {
+          color: #000;
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          svg {
+            color: #e40a0a;
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    text-align: left;
+
+    .form-wrap {
+      width: 300px;
+      margin: auto;
+    }
+
+    label {
+      font-family: "Roboto-Regular";
+      font-size: 12px;
+      color: #000;
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 94%;
+      outline: 0 !important;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-family: "Roboto-Regular";
+      margin: auto;
+      margin-bottom: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    input {
+      height: 40px;
+    }
+
+    textarea {
+      padding-top: 0.5rem;
+    }
+
+    .srv-validation-message {
+      font-family: "Roboto-Regular";
+      font-size: 12px;
+      color: #e40a0a;
+      margin-top: -0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-red {
+      &:disabled {
+        opacity: 0.5;
+        cursor: auto;
+      }
+
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+
+    .contact-info {
+      .contact-link {
+        margin: 3rem 0;
+      }
+    }
+
+    .contact-form {
+      .form-wrap {
+        width: 500px;
+
+        input,
+        textarea {
+            margin-left: 0;
+        }
+
+        .btn-red {
+          width: 200px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

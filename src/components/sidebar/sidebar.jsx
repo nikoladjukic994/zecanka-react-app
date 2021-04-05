@@ -52,7 +52,11 @@ function Sidebar() {
       <Nav className="navbar-top">
         <Nav.Item>
           <Nav>
-            <NavLink to="/" className="logo">
+            <NavLink
+              to="/"
+              className="logo"
+              onClick={() => setSidebarOpened(false)}
+            >
               <img
                 src={process.env.PUBLIC_URL + "images/header/logo.png"}
                 alt="Logo"
@@ -96,7 +100,9 @@ function Sidebar() {
             data-aos-once="true"
           >
             <Nav>
-              <NavLink to={item.link}>{item.name}</NavLink>
+              <NavLink to={item.link} onClick={() => setSidebarOpened(false)}>
+                {item.name}
+              </NavLink>
             </Nav>
           </Nav.Item>
         ))}

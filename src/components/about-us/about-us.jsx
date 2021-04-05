@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./about-us.scss";
+import Gallery from "../home/home-components/gallery";
 
 function AboutUs() {
   return (
@@ -32,23 +33,7 @@ function AboutUs() {
           exercitationem quasi optio perspiciatis.
         </p>
       </div>
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe
-            width="100%"
-            height="500"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=podgorica&t=&z=19&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-          <a href="https://grantorrent-es.com">grantorrent</a>
-          <br></br>
-          <a href="https://www.embedgooglemap.net">website maps free</a>
-        </div>
-      </div>
+      <Gallery></Gallery>
     </div>
   );
 }

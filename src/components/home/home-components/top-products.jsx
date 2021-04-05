@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 function TopProducts() {
   const [topProducts, setTopProducts] = useState([]);
@@ -23,8 +24,10 @@ function TopProducts() {
         </h2>
         <div className="products-row">
           {topProducts.map((product) => (
-            <a
-              href="#"
+            <NavLink
+              to={{
+                pathname: `/furniture-single-${product.id}`,
+              }}
               className="product"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -38,7 +41,7 @@ function TopProducts() {
               </div>
               <h3>{product.title}</h3>
               <span className="price">&euro;{product.price}</span>
-            </a>
+            </NavLink>
           ))}
         </div>
       </div>
