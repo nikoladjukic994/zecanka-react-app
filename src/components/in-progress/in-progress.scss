@@ -1,0 +1,43 @@
+.in-progress-page {
+  position: relative;
+  height: calc(100vh - 68px);
+  margin-top: 68px;
+}
+
+#tsparticles {
+  height: 100%;
+}
+
+.in-progress-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-family: "Playlist";
+    color: #000;
+    font-size: 180px;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "Playlist";
+    color: #000;
+    font-size: 48px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .in-progress-page {
+    height: calc(100vh);
+    margin-top: 0;
+  }
+
+  .in-progress-heading {
+    h2 {
+      font-size: 58px;
+    }
+  }
+}

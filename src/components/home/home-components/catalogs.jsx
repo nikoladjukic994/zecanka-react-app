@@ -21,7 +21,7 @@ function Catalogs() {
         <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
           Preuzmite naš posljednji <br></br>katalog!
         </h1>
-        {catalogs.map((catalog) => (
+        {catalogs.map((catalog, idx) => (
           <a
             href={process.env.PUBLIC_URL + catalog.document}
             className="btn-red"
@@ -30,6 +30,7 @@ function Catalogs() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
+            key={idx}
           >
             Prezmi katalog
           </a>

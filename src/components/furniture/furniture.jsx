@@ -60,15 +60,16 @@ function Furniture() {
           <div
             className={gridList == "grid" ? "products-row" : "products-list"}
           >
-            {filteredProducts.map((product) => (
+            {filteredProducts.map((product, idx) => (
               <NavLink
                 to={{
-                  pathname: `/furniture-single-${product.id}`
+                  pathname: `/furniture-single-${product.id}`,
                 }}
                 className="product"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-once="true"
+                key={idx}
               >
                 <div className="img-wrap">
                   <img

@@ -23,7 +23,7 @@ function TopProducts() {
           Naši <span>top</span> proizvodi
         </h2>
         <div className="products-row">
-          {topProducts.map((product) => (
+          {topProducts.map((product, idx) => (
             <NavLink
               to={{
                 pathname: `/furniture-single-${product.id}`,
@@ -32,6 +32,7 @@ function TopProducts() {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-once="true"
+              key={idx}
             >
               <div className="img-wrap">
                 <img

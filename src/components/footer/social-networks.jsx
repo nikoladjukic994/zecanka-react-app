@@ -45,6 +45,7 @@ function Footer() {
           target="_blank"
           rel="noopener"
           aria-label={item.name}
+          key={idx}
         >
           {item.icon}
         </a>

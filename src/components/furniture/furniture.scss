@@ -61,6 +61,24 @@
   }
 }
 
+.all-products {
+  &.single-product {
+    .product {
+      &:hover {
+        .img-wrap {
+          img {
+            transform: scale(1);
+          }
+        }
+
+        h3 {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .all-products {
     margin-top: 0px;

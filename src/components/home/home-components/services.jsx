@@ -18,12 +18,13 @@ function Services() {
   return (
     <div>
       <div className="services">
-        {services.map((service) => (
+        {services.map((service, idx) => (
           <div
             className="service"
             data-aos="flip-left"
             data-aos-duration="1000"
             data-aos-once="true"
+            key={idx}
           >
             <div className="img-wrap">
               <img

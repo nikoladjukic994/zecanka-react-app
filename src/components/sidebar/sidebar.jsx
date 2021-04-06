@@ -18,10 +18,6 @@ function Sidebar() {
 
   const navigation = [
     {
-      name: "Početna",
-      link: "/",
-    },
-    {
       name: "Namještaj",
       link: "/furniture",
     },
@@ -52,11 +48,7 @@ function Sidebar() {
       <Nav className="navbar-top">
         <Nav.Item>
           <Nav>
-            <NavLink
-              to="/"
-              className="logo"
-              onClick={() => setSidebarOpened(false)}
-            >
+            <NavLink to="/" className="logo">
               <img
                 src={process.env.PUBLIC_URL + "images/header/logo.png"}
                 alt="Logo"
@@ -84,7 +76,7 @@ function Sidebar() {
           data-aos-once="true"
         >
           <Nav>
-            <NavLink to="/" className="logo">
+            <NavLink to="/" exact={true} className="logo">
               <img
                 src={process.env.PUBLIC_URL + "images/header/logo.png"}
                 alt="Logo"
@@ -93,11 +85,23 @@ function Sidebar() {
           </Nav>
         </Nav.Item>
 
+        <Nav.Item
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <Nav>
+            <NavLink to="/" exact onClick={() => setSidebarOpened(false)}>
+              Početna
+            </NavLink>
+          </Nav>
+        </Nav.Item>
         {navigation.map((item, idx) => (
           <Nav.Item
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-once="true"
+            key={idx}
           >
             <Nav>
               <NavLink to={item.link} onClick={() => setSidebarOpened(false)}>

@@ -5,6 +5,8 @@ import axios from "axios";
 import SimpleReactValidator from "simple-react-validator";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import Map from "./map";
 
 const customStyles = {
   content: {
@@ -31,35 +33,6 @@ function Contact() {
   }
 
   const simpleValidator = useRef(new SimpleReactValidator({ locale: "sr" }));
-
-  const postDataHandler = (e) => {
-    e.preventDefault();
-
-    if (
-      Object.values(simpleValidator.current.errorMessages).every(
-        (x) => x === null || x === ""
-      )
-    ) {
-      axios
-        .post("http://localhost:3001/messages", {
-          full_name: fullName,
-          email: Email,
-          message: Message,
-        })
-        .then(() => {
-          emptyForm();
-          setIsOpen(true);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    } else {
-      console.log(simpleValidator.current.errorMessages.email);
-      simpleValidator.current.showMessages();
-      forceUpdate(1);
-      setDisabled(true);
-    }
-  };
 
   SimpleReactValidator.addLocale("sr", {
     accepted: "Polje :attribute mora biti prihvaćeno.",
@@ -103,6 +76,35 @@ function Contact() {
     url: "Polje :attribute mora biti URL.",
   });
 
+  const postDataHandler = (e) => {
+    e.preventDefault();
+
+    if (
+      Object.values(simpleValidator.current.errorMessages).every(
+        (x) => x === null || x === ""
+      )
+    ) {
+      axios
+        .post("http://localhost:3001/messages", {
+          full_name: fullName,
+          email: Email,
+          message: Message,
+        })
+        .then(() => {
+          emptyForm();
+          setIsOpen(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      console.log(simpleValidator.current.errorMessages.email);
+      simpleValidator.current.showMessages();
+      forceUpdate(1);
+      setDisabled(true);
+    }
+  };
+
   const emptyForm = () => {
     setFullName("");
     setEmail("");
@@ -143,7 +145,8 @@ function Contact() {
             className="contact-link"
             href="mailto:zecanka@email.com"
           >
-            zecanka@email.com
+            <FaEnvelope></FaEnvelope>
+            <span>zecanka@email.com</span>
           </a>
           <a
             data-aos="flip-left"
@@ -152,10 +155,11 @@ function Contact() {
             className="contact-link"
             href="tel:+38267111222"
           >
-            +382 67 111 222
+            <FaPhoneAlt></FaPhoneAlt>
+            <span>+382 67 111 222</span>
           </a>
           <div
-            className=""
+            className="social-wrap"
             data-aos="flip-left"
             data-aos-duration="1000"
             data-aos-once="true"
@@ -248,23 +252,7 @@ function Contact() {
           OK!
         </button>
       </Modal>
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe
-            width="100%"
-            height="450"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=podgorica&t=&z=19&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-          <a href="https://grantorrent-es.com">grantorrent</a>
-          <br></br>
-          <a href="https://www.embedgooglemap.net">website maps free</a>
-        </div>
-      </div>
+      <Map></Map>
     </div>
   );
 }

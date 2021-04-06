@@ -20,7 +20,7 @@ const FurnitureSingle = (props) => {
 
   return (
     <div>
-      <div className="top-products all-products">
+      <div className="top-products all-products single-product">
         <h2 data-aos="flip-left" data-aos-duration="1000" data-aos-once="true">
           Više <span>detalja</span> o proizvodu
         </h2>

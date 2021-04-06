@@ -22,12 +22,13 @@ function Gallery() {
           Mjesta sa našim <span>namještajem</span>
         </h2>
         <div className="gallery-images">
-          {galleryImages.map((gallery) => (
+          {galleryImages.map((gallery, idx) => (
             <div
               className="img-wrap"
               data-aos="flip-left"
               data-aos-duration="1000"
               data-aos-once="true"
+              key={idx}
             >
               <img
                 src={process.env.PUBLIC_URL + gallery.image}
